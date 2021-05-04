@@ -1,29 +1,12 @@
-#container table, td ,th
-{
-border :1px black solid ;
-}
 
-#container table 
-{
-    width: 1000px;
-    border-collapse: collapse;
-}
-#container
-{
-    margin-top: 50px;
-    margin-left: 50px;
-}
-#cotainer td
-{
+
+
+
+tr, td, th {  
+    padding: 10px ;
+    border :1px black solid ;
     text-align: center;
-    height: 16px;
-    width: 100px;
-}
-th
-{
-    width: 100px;
-}
-td
-{
-    width: 100px;
-}
+    
+  } 
+
+  
