@@ -9,4 +9,25 @@ tr, td, th {
     
   } 
 
-  
+  data{
+    font-family: 'Old Standard TT', serif;
+    color: Thistle;
+  }
+
+  text{
+    font-family: 'Josefin Sans', sans-serif;
+    color:PaleVioletRed;
+  }
+
+  mark{
+    font-family: 'Itim', cursive;
+    color:MediumVioletRed
+  }
+
+  body{
+    background-color: MistyRose;
+  }
+table{
+  background-color:PaleVioletRed ;
+  color:Thistle;
+}
