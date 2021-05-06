@@ -126,6 +126,15 @@ for (let i = 0 ; i < workingHours.length; i++ ){
  thEl.textContent =totalTotal;
 }
 
+
+let salmonCookiesForm = document.getElementById('salmonCookiesForm')
+
+// function salmonCookiesForm (){
+
+// }
+
+
+
 let seatlle = new Cities('seatlle', 23, 65, 6.3);
 let Tokyo = new Cities('Tokyo', 3, 24, 1.2);
 let Dubai = new Cities('Dubai', 11, 38, 3.7);
@@ -156,8 +165,24 @@ Lima.render();
 
 total();
 
+let salmonCookiesForm = document.getElementById('salmonCookiesForm');
+AddCookies.addEventListener('submit', salmonCookiesForm);
+function salmonCookiesForm (event){
+event.preventDefault();
+let location = event.target.location.value;
+let Theminimumnumberofcustomer = event.target.Theminimumnumberofcustomer.value;
+let Themaximumnumberofcustomers = event.target.Themaximumnumberofcustomers.value;
+let Theaveragenumberofcookiespurchased = event.target.Theaveragenumberofcookiespurchased.value;
 
+ 
+let cities = new Cities(location, Theminimumnumberofcustomer, Themaximumnumberofcustomers, Theaveragenumberofcookiespurchased )
+}
 
+cities.randomCX();
+cities.sPerHour();
+cities.render();
+
+ 
 // let seatlle = {
 //     location : 'seatlle',
 //     min : 23,

@@ -27,10 +27,16 @@ tr, td, th {
   body{
     background-color: MistyRose;
   }
+  */
 table{
-  background-color:PaleVioletRed ;
-  color:Thistle;
-} */
+  /* background-color:PaleVioletRed ; */
+  color:blue;
+  font-weight: bold;
+} 
+h1 a{
+  color: brown;
+
+}
 
 h1 {
   text-align: center;
