@@ -60,9 +60,9 @@ a {
 }
  ul li{
   display: inline-block;
-  padding-right: 100px;
+  padding-right: 60px;
   font-size: 20px;
-  margin-left: 200px;
+  margin-left: 150px;
   font-size: 30px;
   font-family: 'Itim', cursive;
  }
