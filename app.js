@@ -102,7 +102,7 @@ function total(){
 
     let tdTotal =document.createElement('td');
    trEl.appendChild(tdTotal);
-tdTotal.textContent = 'Total';
+   tdTotal.textContent = 'Total';
   
 for (let i = 0 ; i < workingHours.length; i++ ){
     let hTotal = 0 
@@ -125,6 +125,12 @@ for (let i = 0 ; i < workingHours.length; i++ ){
     trEl.appendChild(thEl);
  thEl.textContent =totalTotal;
 }
+
+
+
+
+
+
 
 let seatlle = new Cities('seatlle', 23, 65, 6.3);
 let Tokyo = new Cities('Tokyo', 3, 24, 1.2);
@@ -155,6 +161,30 @@ Lima.sPerHour();
 Lima.render();
 
 total();
+
+let salmonCookiesForm = document.getElementById('salmonCookiesForm');
+salmonCookiesForm.addEventListener('submit', AddCookies );
+function AddCookies (event){
+event.preventDefault();
+let location = event.target.location.value;
+let Theminimumnumber = event.target.Theminimumnumber.value;
+let Themaximumnumber = event.target.Themaximumnumber.value;
+let Theaveragenumberofcookies = event.target.Theaveragenumberofcookies.value;
+
+ 
+let cities = new Cities(location, Theminimumnumber, Themaximumnumber, Theaveragenumberofcookies )
+
+tableEl.removeChild(tableEl.lastElementChild);
+cities.randomCX();
+cities.sPerHour();
+cities.render();
+
+total();
+
+}
+
+
+
 
 
 
