@@ -102,7 +102,7 @@ function total(){
 
     let tdTotal =document.createElement('td');
    trEl.appendChild(tdTotal);
-tdTotal.textContent = 'Total';
+   tdTotal.textContent = 'Total';
   
 for (let i = 0 ; i < workingHours.length; i++ ){
     let hTotal = 0 
@@ -127,11 +127,8 @@ for (let i = 0 ; i < workingHours.length; i++ ){
 }
 
 
-let salmonCookiesForm = document.getElementById('salmonCookiesForm')
 
-// function salmonCookiesForm (){
 
-// }
 
 
 
@@ -166,23 +163,31 @@ Lima.render();
 total();
 
 let salmonCookiesForm = document.getElementById('salmonCookiesForm');
-AddCookies.addEventListener('submit', salmonCookiesForm);
-function salmonCookiesForm (event){
+salmonCookiesForm.addEventListener('submit', AddCookies );
+function AddCookies (event){
 event.preventDefault();
 let location = event.target.location.value;
-let Theminimumnumberofcustomer = event.target.Theminimumnumberofcustomer.value;
-let Themaximumnumberofcustomers = event.target.Themaximumnumberofcustomers.value;
-let Theaveragenumberofcookiespurchased = event.target.Theaveragenumberofcookiespurchased.value;
+let Theminimumnumber = event.target.Theminimumnumber.value;
+let Themaximumnumber = event.target.Themaximumnumber.value;
+let Theaveragenumberofcookies = event.target.Theaveragenumberofcookies.value;
 
  
-let cities = new Cities(location, Theminimumnumberofcustomer, Themaximumnumberofcustomers, Theaveragenumberofcookiespurchased )
-}
+let cities = new Cities(location, Theminimumnumber, Themaximumnumber, Theaveragenumberofcookies )
 
+tableEl.removeChild(tableEl.lastElementChild);
 cities.randomCX();
 cities.sPerHour();
 cities.render();
 
- 
+total();
+
+}
+
+
+
+
+
+
 // let seatlle = {
 //     location : 'seatlle',
 //     min : 23,

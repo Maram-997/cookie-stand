@@ -32,9 +32,15 @@ table{
   /* background-color:PaleVioletRed ; */
   color:blue;
   font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 } 
 h1 a{
   color: brown;
+  /* float: right;
+  display: block; */
 
 }
 
@@ -147,3 +153,49 @@ ol li{
    background-size: cover;
 
  }
+ input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 2px solid blue;
+
+}
+input[type=submit] {
+  background-color: whitesmoke;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+#salesFooter{
+  background-color: blue;
+  height: 60px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  text-align: center;
+  padding-top:30px ;
+  color:whitesmoke
+}
+form{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: blue;
+}
+input[type=text]:hover {
+background-color: blue;
+color: whitesmoke;
+}
+input[type=submit]:hover{
+  background-color: blue;
+  color: whitesmoke;
+}
