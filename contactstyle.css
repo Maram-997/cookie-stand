@@ -1,6 +1,6 @@
 
 
-
+/*
 
 tr, td, th {  
     padding: 10px ;
@@ -27,9 +27,9 @@ tr, td, th {
   body{
     background-color: MistyRose;
   }
-  */
+  
 table{
-  /* background-color:PaleVioletRed ; */
+
   color:blue;
   font-weight: bold;
   margin-top: 30px;
@@ -39,8 +39,6 @@ table{
 } 
 h1 a{
   color: brown;
-  /* float: right;
-  display: block; */
 
 }
 
@@ -84,9 +82,7 @@ a {
 
 
 #intro{
-  /* overflow: auto;
-  width: 400px;
-  height: 400px; */
+  
   display:block;
   padding-left: 20px;
   color: brown;
@@ -96,10 +92,7 @@ a {
   margin-top: 450px;
 }
 
-/* section{
-  margin-left: auto;
-  margin-right: auto;
-} */
+
 header{
   margin-left: auto;
   margin-right: auto;
@@ -210,7 +203,7 @@ fieldset {
 width: 700px;
 height: 400px;
 overflow: hidden;
-margin-top: 100px;
+margin-top: 200px;
 
 }
 .middle{
@@ -325,3 +318,43 @@ button:hover{
   padding-top:30px;
   
 }
+*/
+  .warpper{
+    display: flex;
+    position: relative;
+}
+.warpper .sidebar{
+position: fixed;
+width: 200px;
+height: 100%;
+background: burlywood;
+padding: 30px 0;
+
+}
+.warpper .sidebar h2{
+    color: brown;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.warpper .sidebar ul li{
+padding: 15px;
+border-bottom: 1px solid brown;
+border-top: 1px solid brown;
+}
+.warpper .sidebar ul li a {
+    display: block;
+    color: cornsilk;
+} 
+.warpper .sidebar ul li a .fas{
+    width: 25px;
+}
+ .warpper .sidebar ul li:hover{
+    background: ivory;
+
+}
+.warpper .sidebar ul li:hover a{
+    color: #fff;
+} 
+
+
