@@ -1,0 +1,414 @@
+
+tr, td, th {  
+  padding: 10px ;
+  border :1px black solid ;
+  text-align: center;
+  
+} 
+
+/*table css*/ 
+/* table{
+font-family: 'Titillium Web', sans-serif;
+color:blue;
+font-weight: bold;
+margin-top: 30px;
+margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+
+} 
+
+
+input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+border: 2px solid blue;
+
+}
+input[type=submit] {
+background-color: whitesmoke;
+color: black;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+float: right;
+}
+#salesFooter{
+background-color: blue;
+height: 60px;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+font-size: 20px;
+text-align: center;
+padding-top:30px ;
+color:whitesmoke
+}
+form{
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+color: blue;
+}
+input[type=text]:hover {
+background-color: blue;
+color: whitesmoke;
+}
+input[type=submit]:hover{
+background-color: blue;
+color: whitesmoke;
+}
+fieldset > legend{
+margin-left: 3rem;
+border: 1px solid blue;
+background-color: blue;
+color: antiquewhite;
+border-radius: 4px;
+}
+fieldset {
+border-color: blue;
+border-radius: 4px;
+
+} */
+/* ends here */
+
+body{
+background:SteelBlue;
+
+}
+
+
+header h1 {
+font-family: 'Anton', sans-serif;
+margin-top: 0;
+text-align: left;
+font-weight: bolder;
+color: brown;
+border-radius: 5px;
+background-color: white;
+height: 110px;
+width: 100%;
+}
+
+h1 a {
+  font-size: 60px;
+}
+#logo{
+float: right;
+height: 100px;
+border-radius: 50%;
+margin-right:50px;
+margin-top: -125px;
+
+}
+
+
+a {
+color:brown;
+font-family: 'Anton', sans-serif;
+text-decoration: none;
+font-weight:bolder;
+font-size:20px ;
+}
+
+/* Navigation bar css */
+.navbar{
+height: 400px;
+width: 100px;
+margin-top: -30px;
+background-color: white;
+border-radius: 5px;
+margin-top: 5px;
+
+
+}
+.navbar li{
+line-height: 90px;
+text-align: center;
+
+}
+
+.navbar ul{
+display: inline;
+transition: .5s;
+transition-property: left;
+
+}
+.navbar li:hover{
+padding-left: 5px;
+
+}
+
+.navbar label{
+color: brown;
+font-family: 'Anton', sans-serif;
+font-weight: bolder;
+font-size: 20px;
+margin-left: 7px;
+cursor: pointer;
+}
+.navbar li:last-child{
+margin-bottom: 30px;
+}
+
+.navbar label:hover{
+padding-left: 5px;
+}
+
+
+
+#check{
+  display: none;
+}
+
+/*navigation bar css ends here */
+
+/* the slide show css */
+
+
+.slideshow{
+width: 700px;
+height: 400px;
+overflow: hidden;
+margin-top: 400px;
+
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin:6px;
+  cursor: pointer;
+  transition: 0.4s;
+
+}
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+position: absolute;
+visibility: hidden;
+
+}
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+ 
+}
+.slide{
+  width: 20%;
+  transition: 0.5s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+  
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s2{
+  margin-left: -20%;
+}
+#r3:checked ~ .s3{
+  margin-left: -40%;
+}
+#r4:checked ~ .s4{
+  margin-left: -80%;
+}
+/* ends here */  
+
+/* contact us css */
+.warpper{
+ float: right;
+ height: 400px;
+ width: 100px;
+ margin-top: -10px;
+ background-color: white;
+ border-radius: 5px;
+ margin-right:  -150px; 
+ transition-duration : 2s;
+ transition-property: right;
+}
+
+
+
+#contacting{ 
+font-family: 'Anton', sans-serif;
+ text-align: center;
+ color: brown;
+}
+
+.warpper .sidebar li{
+line-height: 55px;
+text-align: center;
+
+}
+
+.warpper .sidebar ul{
+display: inline;
+transition: .5s;
+transition-property: padding;
+list-style-type: none;
+
+}
+.warpper li:hover{
+padding-left: 10px;
+
+}
+
+
+
+#check:checked ~ .warpper{
+ margin-right:  0px;
+}
+
+
+
+/* the body's main page css */
+
+#intro{
+
+display:block;
+padding-left: 20px;
+color: white;
+font-family: 'Texturina', serif;
+font-size: 35px;
+/* padding-top:30px;
+margin-top: 50px; */
+padding-top:30px;
+margin-top: 450px;
+}
+
+#divEl{
+padding-left: 10px;
+}
+#divEl h3{
+font-family: 'Anton', sans-serif;
+color:brown;
+font-size: 30px;
+margin-left: 50px;
+}
+
+#divEl ol li{
+margin-left: 60px;
+font-size: 25px;
+font-family: 'Texturina', serif;
+color: white;
+margin-top: 0px;
+
+}
+
+.openHours{
+float: right;
+margin-right: 50px;
+margin-top: -250px;
+width: 450px;
+
+}
+
+.openHours h3{
+font-family: 'Anton', sans-serif;
+color:brown;
+font-size: 30px;
+margin-top: -45px;
+}
+
+.openHours span{
+font-family: 'Texturina', serif;
+color:white;
+font-size: 20px;
+}
+
+
+/* ends here */
+
+
+#shirtP{
+float: right;
+ font-size: 25px;
+ width: 350px;
+height: 350px;
+margin-right: 100px;
+overflow-x:auto ;
+display: inline;
+margin-top: -680px;
+}
+#shirt{
+float: right;
+display: inline;
+margin-top: -540px;
+margin-right: 100px;
+
+}
+button{
+background-color: brown;
+color:LightSalmon ;
+border-radius: 5px;
+width: 100px;
+height: 50px;
+float: right;
+margin-top: -200px;
+margin-right: 100px;
+cursor: pointer;
+}
+
+button:hover{
+background-color: LightSalmon;
+color: brown;
+}
+
+#news{
+font-family: 'Texturina', serif;
+color:white;
+font-size: 25px;
+width: 450px;
+height: 250px;
+margin-left:auto ;
+margin-right: auto;
+margin-top: -380px;
+margin-bottom:10px;
+font-weight: bolder;
+
+
+}
+
+
+
+footer{
+background-color: brown;
+height: 60px;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+font-size: 20px;
+text-align: center;
+padding-top:40px ;
+color:white;
+}
+

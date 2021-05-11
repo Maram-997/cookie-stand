@@ -7,7 +7,7 @@ tr, td, th {
   } 
 
  /*table css*/ 
-table{
+/* table{
   font-family: 'Titillium Web', sans-serif;
   color:blue;
   font-weight: bold;
@@ -76,7 +76,7 @@ fieldset {
   border-color: blue;
   border-radius: 4px;
 
-}
+} */
 /* ends here */
 
 body{
@@ -95,6 +95,7 @@ header h1 {
   background-color: white;
   border-radius: 5px;
   height: 110px;
+  
 
 }
 h1 a {
@@ -106,7 +107,6 @@ h1 a {
   border-radius: 50%;
   margin-right:50px;
   margin-top: -145px;
-  
  
 }
 
@@ -126,7 +126,7 @@ a {
   margin-top: -30px;
   background-color: white;
   border-radius: 5px;
-  
+ 
 
   
 }
@@ -178,7 +178,7 @@ a {
   width: 700px;
   height: 400px;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 500px;
   
   }
   .middle{
@@ -254,9 +254,9 @@ a {
    margin-right:  -150px; 
    transition-duration : 2s;
    transition-property: right;
+   
  }
-
-
+ 
 
  #contacting{ 
   font-family: 'Anton', sans-serif;
@@ -275,6 +275,7 @@ a {
   transition: .5s;
   transition-property: padding;
   list-style-type: none;
+  
 
 }
 .warpper li:hover{
@@ -300,7 +301,7 @@ a {
   font-family: 'Texturina', serif;
   font-size: 35px;
   padding-top:30px;
-  margin-top: 50px;
+  margin-top: 450px;
 }
 
 #divEl{
@@ -347,33 +348,45 @@ a {
 /* ends here */
 
 
-#shirtP{
-  float: right;
-   font-size: 25px;
-   width: 350px;
-  height: 350px;
-  margin-right: 100px;
-  overflow-x:auto ;
-  display: inline;
-  margin-top: -680px;
+.product{
+    width: 550px;
+    margin-left:auto ;
+    margin-right: auto;
+    margin-top: -420px;
+    margin-bottom:10px;
 }
-#shirt{
-  float: right;
-  display: inline;
-  margin-top: -540px;
-  margin-right: 100px;
- 
+.product h2{
+    color:brown;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
 }
+
+.product span{
+font-family: 'Texturina', serif;
+  color:white;
+  font-size: 20px;
+position: relative;
+top: -30px;
+}
+
+.product img{
+    position: relative;
+    right: -60px;
+    border-radius: 5px;
+
+}
+
 button{
 background-color: brown;
-color:LightSalmon ;
+color:LightSalmon; 
 border-radius: 5px;
 width: 100px;
 height: 50px;
 float: right;
-margin-top: -200px;
-margin-right: 100px;
 cursor: pointer;
+position: relative;
+margin-top: 275px;
+margin-right:55px;
 }
 
 button:hover{
@@ -381,15 +394,7 @@ button:hover{
   color: brown;
 }
 
-#news{
-  display:block;
-  padding-left: 20px;
-  color: brown;
-  font-family: 'Itim', cursive;
-  font-size: 35px;
-  padding-top:30px;
-  
-}
+
 
  
 footer{
