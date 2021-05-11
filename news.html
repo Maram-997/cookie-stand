@@ -5,65 +5,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pat’s Salmon Cookies News</title>
-    >
+    <title>Pat’s Salmon Cookies</title>
+
+    <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="newsstyle.css">
     <!-- <link rel="stylesheet" href="reset.css"> -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Old+Standard+TT:ital@1&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Titillium+Web:wght@200&display=swap"
         rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Itim&family=Josefin+Sans:wght@100&family=Old+Standard+TT:ital@1&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Texturina:wght@100&family=Titillium+Web:wght@200&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <input type="checkbox" name="contactUs" id="check">
     <header>
-        <h1> <a href="index.html"></a> Pat’s Salmon Cookies</h1> 
+        <h1><a href="index.html">Pat’s Salmon Cookies</a></h1>
+      
     </header>
-    <nav>
-        <img src="./images/fish.jpg" alt="logo">
-        <img id ="logo" src="./images/fish.jpg" alt="logo">
+    <img id="logo" src="./images/fish.jpg" alt="logo">
+    <div class="warpper">
+        <div class="sidebar">
+            <h3 id="contacting">Contact us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/maram.abumurad"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://instagram.com/marram.2296?igshid=1shd2cvw15zm"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="far fa-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/maram-abu-murad-9a0282195"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="navbar">
+
+
         <ul>
             <li><a href="news.html">News</news></a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="sales.html">Sales</a></li>
-            <li><a href="">Contact Us</a></li>
-            
         </ul>
-    </nav>
-    <main>
-        <p id="news">We are EXCITED to tell that soon you will find us Amman and Seoul.<br> 
-         Can't wait to see you.
-        that's not all of it, We will deliver our products all around the world. so BE READY!</p>
- 
-     <section> 
+        <label for="check">Contact Us</label>
+    </div>
+ <div id="news">
+    <p>We are EXCITED to tell that soon <br>
+         you will find us Amman and Seoul.<br> 
+        Can't wait to see you.
+       that's not all of it, We will deliver our <br>
+       products all around the world. so BE READY!</p> 
+    </div>
+    <section>
         <div class="slideshow middle">
             <div class="slides">
                 <input type="radio" name="r" id="r1" checked>
-                <input type="radio" name="r" id="r2" >
-                <input type="radio" name="r" id="r3" >
-                <input type="radio" name="r" id="r4" >
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4">
 
-                <div class="slide s1" >
-                 <img src="./images/family.jpg" alt="">
+                <div class="slide s1">
+                    <img src="./images/family.jpg" alt="">
                 </div>
-                <div class="slide s2" >
+                <div class="slide s2">
                     <img src="./images/cutter.jpeg" alt="">
-                   </div>
-                   <div class="slide s3" >
+                </div>
+                <div class="slide s3">
                     <img src="./images/frosted-cookie.jpg" alt="">
-                   </div>
-                   <div class="slide s4" >
+                </div>
+                <div class="slide s4">
                     <img src="./images/chinook.jpg" alt="">
-                   </div>
+                </div>
             </div>
             <div class="navigation">
                 <label for="r1" class="bar"></label>
@@ -72,12 +89,12 @@
                 <label for="r4" class="bar"></label>
             </div>
         </div>
-           
-        </section>
-        <p id="intro">We have developed a recipe for a coffee-time confection called Salmon Cookies.
-            These cookies made into the shape of a salmon that has just a hint of fishy goodness.</p>
-        
-            <div id = divel>
+
+    </section>
+    <p id="intro">We have developed a recipe for a coffee-time confection called Salmon Cookies.
+        These cookies made into the shape of a salmon that has just a hint of fishy goodness.</p>
+
+    <div id=divEl>
         <h3>Where To Find Us</h3>
         <ol>
             <li>Seattle</li>
@@ -87,10 +104,11 @@
             <li>Lima</li>
         </ol>
     </div>
-</main>
-    <div>
-        <h3 class="openHours">Opening Hours:</h3>
-        <span class="openHours">From 6:00 AM to 8:00 PM for all locations. So We Can Provide You The Best Services & Products.</span>
+
+    <div class="openHours">
+        <h3>Opening Hours</h3>
+        <span>From 6:00 AM to 8:00 PM for all locations. <br>
+            So We Can Provide You The Best Services & Products.</span>
     </div>
     <footer>Copyright @ 2021 Pat’s Salmon Cookies - All Rights Reserved.</footer>
 </body>
